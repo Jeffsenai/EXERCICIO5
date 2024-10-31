@@ -71,7 +71,7 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+    margin-top: 60px;
 }
 
 .cartoes {
@@ -226,7 +226,7 @@ p{
     padding-bottom: 50px;
 }
 .cartoes{
-margin-top: 60px;
+margin-top: 20px;
 }
 
 
