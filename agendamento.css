@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "FONTE TITULO";
+    src: url('Fontes/Cunia.ttf');
+}
+
+@font-face {
+    font-family: "FONTE TEXTO";
+    src: url('Fontes/Modeka.otf');
+}
+
+body {
+    background-color: #111;
+    color: #333;
+    font-family: "FONTE TEXTO";
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 20px;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.menu {
+    background-color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-family: "FONTE TITULO";
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+#agendamento {
+    padding: 40px;
+    text-align: center;
+    background-color: #222;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#agendamento h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: "FONTE TITULO";
+    font-size: 28px;
+}
+
+#agendamento p {
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: "FONTE TEXTO";
+    font-size: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: "FONTE TITULO";
+}
+
+button[type="submit"]:hover {
+    background-color: #ff2e2e;
+}
+
+#rodape {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-footer {
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+.conteudo-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.informacoes-contato {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.informacoes-contato h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "FONTE TITULO";
+}
+
+.informacoes-contato p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: "FONTE TEXTO";
+}
+
+.endereco-mapa h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "FONTE TITULO";
+}
+
+.endereco-mapa p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: "FONTE TEXTO";
+}
+
+.endereco-mapa {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.endereco {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+iframe {
+    max-width: 100%;
+    border: none;
+}
+
+.formulario-contato {
+    width: 100%;
+    max-width: 600px;
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.formulario-contato h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.formulario-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-family: "FONTE TEXTO";
+}
+
+.input-group input, 
+.input-group textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-family: "FONTE TEXTO";
+}
+
+.input-group input::placeholder, 
+.input-group textarea::placeholder {
+    color: #999;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff2e2e;
+}

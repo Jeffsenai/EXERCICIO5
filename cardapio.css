@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "FONTE TITULO";
+    src: url('Fontes/Cunia.ttf');
+}
+
+@font-face {
+    font-family: "FONTE TEXTO";
+    src: url('Fontes/Modeka.otf');
+}
+
+body {
+    background-color: #111;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 20px;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.menu {
+    background-color: black;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-family: "FONTE TITULO";
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+h1 {
+    color: white;
+    font-family: "FONTE TITULO";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    margin: 30px;
+    text-align: center;
+    background-color: #222; 
+    border: 2px solid red; 
+    border-radius: 10px; 
+    padding: 20px; 
+    width: 450px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s; 
+}
+
+.container:hover {
+    transform: scale(1.05); 
+}
+
+.img-box {
+    margin-bottom: 10px;
+    border-radius: 10px; 
+}
+
+.img {
+    width: 350px; 
+    height: 250px;
+    border-radius: 10px; 
+}
+
+.legenda {
+    font-family: "FONTE TEXTO";
+    color: #fff;
+    
+}
+
+.legenda h3 {
+    margin-top: 20px;
+margin-bottom: 10px;
+    font-family: "FONTE TITULO";
+    font-size: 28px;
+
+}
+
+.legenda p {
+    margin: 0; 
+    font-size: 18px; 
+}
+
+.legenda2 h3{
+font-family: "FONTE TITULO";
+color: white;
+font-size: 28px;
+margin-bottom: 5px;
+}
+
+.legenda2 p{
+    font-family: "FONTE TEXTO";
+    color: white;
+    font-size: 20px;
+    }
+
+
+
+
+
+
+.img-box img {
+    transition: filter 0.5s ease-in-out; /* Transição para o efeito de desfoque */
+border-radius: 10px;
+}
+
+.img-box::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0); 
+    transition: background 0.5s ease-in-out; 
+    z-index: 1; 
+    border-radius: 10px;
+}
+
+.container:hover .img-box img {
+    filter: blur(20px); 
+    border-radius: 10px;
+}
+
+.container:hover .legenda2 {
+   visibility: hidden;
+   margin-top: 30px;
+}
+
+.container:hover .legenda2 p {
+    visibility: hidden;
+ 
+ }
+ 
+
+.container:hover .img-box::before {
+    background: rgba(0, 0, 0, 0.491); 
+    border-radius: 10px;
+}
+
+.legenda {
+    opacity: 0;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(20px);
+    z-index: 2; 
+}
+
+.legenda h2, .legenda p {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.legenda {
+    display: grid;
+place-items: center;
+}
+
+.container:hover .legenda {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cartoes{
+    display: flex;
+}
+
+#espaco{
+    margin-right: 100px;
+}
+p{
+    font-size: 17px;
+}
+.espaco1{
+    padding-bottom: 50px;
+}
+.cartoes{
+margin-top: 60px;
+}
+
+
+
+.espacobotoes{
+    background-color: #5A8527;
+    height: 70px;
+    display: grid;
+    place-items: center;
+}
+
+
+#rodape {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-footer {
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+.conteudo-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.informacoes-contato {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.informacoes-contato h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "FONTE TITULO";
+}
+
+.informacoes-contato p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: "FONTE TEXTO";
+}
+
+.endereco-mapa h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "FONTE TITULO";
+}
+
+.endereco-mapa p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: "FONTE TEXTO";
+}
+
+.endereco-mapa {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.endereco {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+iframe {
+    max-width: 100%;
+    border: none;
+}
+
+.formulario-contato {
+    width: 100%;
+    max-width: 600px;
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.formulario-contato h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.formulario-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-family: "FONTE TEXTO";
+}
+
+.input-group input, 
+.input-group textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-family: "FONTE TEXTO";
+}
+
+.input-group input::placeholder, 
+.input-group textarea::placeholder {
+    color: #999;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff2e2e;
+}
