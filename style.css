@@ -119,10 +119,11 @@ section#sobre {
 .imagem-restaurante img {
     width: 800px;
     margin-top: 25px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  
+}
+
+.imagem-restaurante {
+    display: grid;
+    place-items: center;
 }
 
 
